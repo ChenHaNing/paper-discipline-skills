@@ -1,5 +1,10 @@
 # Claude Code 论文写作纪律 Skill 集
 
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Skills](https://img.shields.io/badge/Skills-11-orange.svg)
+![For](https://img.shields.io/badge/For-Claude%20Code-7C3AED.svg)
+![Language](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-red.svg)
+
 11 个面向中文科研写作的 Claude Code Skill。把《Claude Code 科研手记》一书里的踩坑教训，固化成 AI 在动手前必须执行的检查点。
 
 ## 来源与定位
