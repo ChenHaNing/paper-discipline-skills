@@ -1,11 +1,11 @@
 # Claude Code 论文写作纪律 Skill 集
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Skills](https://img.shields.io/badge/Skills-11-orange.svg)
+![Skills](https://img.shields.io/badge/Skills-12-orange.svg)
 ![For](https://img.shields.io/badge/For-Claude%20Code-7C3AED.svg)
 ![Language](https://img.shields.io/badge/Language-%E4%B8%AD%E6%96%87-red.svg)
 
-11 个面向中文科研写作的 Claude Code Skill。把《Claude Code 科研手记》一书里的踩坑教训，固化成 AI 在动手前必须执行的检查点。
+12 个面向中文科研写作的 Claude Code Skill。把《Claude Code 科研手记》一书里的踩坑教训，固化成 AI 在动手前必须执行的检查点。
 
 ## 三个特点
 
@@ -15,7 +15,7 @@
 
 ## 来源与定位
 
-本 Skill 集从《Claude Code 科研手记》一书的 11 条核心纪律提炼而成。书是一名管理学科方向研究者用 Claude Code 写论文的真实记录——27 个项目、1000+ 次会话、12 万条对话——其中反复出现的踩坑场景，被抽象为可在 AI 上下文中自动触发的纪律。
+本 Skill 集从《Claude Code 科研手记》一书的 12 条核心纪律提炼而成。书是一名管理学科方向研究者用 Claude Code 写论文的真实记录——27 个项目、1000+ 次会话、12 万条对话——其中反复出现的踩坑场景，被抽象为可在 AI 上下文中自动触发的纪律。
 
 设计模式参考 Anthropic 社区的 superpowers 项目，但针对中文科研写作场景做了重写：触发词、举例、Rationalization Table 全部对应中国研究生与青年科研学者的工作习惯。
 
@@ -38,6 +38,7 @@
 | `paper-pilot-before-batch` | 处理 ≥ 30 条目的批量任务 | 全量跑炸了改不回来 |
 | `paper-parallel-audit` | 大批量引用 / 术语 / 格式核查 | 串行慢 + 中间挂了从头来 |
 | `paper-translate-advisor-feedback` | 拿到导师录音、便条、口头反馈 | AI 听不懂学术口语 |
+| `paper-logical-consistency` | 改动核心声明 / 研究问题 / 主要结论 | 改一处忘了改其他章节，论证穿帮 |
 | `paper-verify-before-handoff` | 准备发给导师 / 提交 | AI 写得太流畅让人放松警惕 |
 | `paper-writing-discipline` | 想加一条新规则到 skill | 按 4 个判断题筛选新坑 |
 
@@ -62,7 +63,7 @@ git clone https://github.com/ChenHaNing/paper-discipline-skills.git
 cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 ```
 
-安装完成后开新会话，11 个 Skill 会出现在 Claude Code 的系统提示里，按各自的 description 自动触发。
+安装完成后开新会话，12 个 Skill 会出现在 Claude Code 的系统提示里，按各自的 description 自动触发。
 
 ## 使用方式
 
@@ -116,7 +117,7 @@ cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 |  | 本仓库 | 《Claude Code 科研手记》一书 |
 | --- | --- | --- |
 | 形式 | Markdown Skill 文件 | LaTeX 排版 PDF |
-| 内容 | 11 条可执行纪律 | 15 章 + 5 附录，含背景、案例、实操 |
+| 内容 | 12 条可执行纪律 | 15 章 + 5 附录，含背景、案例、实操 |
 | License | 开源 | 闭源 |
 | 适用 | 已经在用 Claude Code 想立刻装上纪律的人 | 想系统了解为什么这么做、怎么从零开始的人 |
 
@@ -130,7 +131,7 @@ Skill 装上后会在该触发的时候自动提醒你；书读完后你会知�
 
 ## 安全声明
 
-Skill 能让 AI agent 执行代码、修改文件、读写网络。本仓库的 11 个 Skill 是纯 Markdown 文件，不包含可执行代码——但它们会让 AI 主动调用 Edit / Write / Bash 等工具改你的文件。例如 `paper-backup-before-word` 会让 AI 在编辑 .docx 前自动跑 `cp` 命令；`paper-parallel-audit` 会让 AI 派多个子 Agent 同时跑核查。
+Skill 能让 AI agent 执行代码、修改文件、读写网络。本仓库的 12 个 Skill 是纯 Markdown 文件，不包含可执行代码——但它们会让 AI 主动调用 Edit / Write / Bash 等工具改你的文件。例如 `paper-backup-before-word` 会让 AI 在编辑 .docx 前自动跑 `cp` 命令；`paper-parallel-audit` 会让 AI 派多个子 Agent 同时跑核查。
 
 安装前请自行阅读每个 SKILL.md，确认它要做的动作符合你的预期，不要不看就装。
 
@@ -140,7 +141,7 @@ Skill 能让 AI agent 执行代码、修改文件、读写网络。本仓库的 
 
 作者是管理学科方向的研究者，业余在小红书分享科研工具使用经验。
 
-- 小红书：搜索 **chanw**——Claude Code 科研手记系列、科研自动化系列等。
+- 小红书：搜索 **Chanw**——Claude Code 科研手记系列、科研自动化系列等。
 - 书稿《Claude Code 科研手记》的 PDF 版本：小红书私信。
 
 ## 关于 AI 辅助科研写作的立场

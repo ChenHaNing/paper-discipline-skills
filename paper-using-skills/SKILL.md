@@ -40,6 +40,7 @@ description: |
 | 处理 ≥ 30 条目的批量任务 | `paper-pilot-before-batch` | 全量跑炸了改不回来 |
 | 大批量引用 / 术语 / 格式核查 | `paper-parallel-audit` | 串行慢 + 中间挂了从头来 |
 | 用户拿来导师录音、便条、口头反馈 | `paper-translate-advisor-feedback` | AI 听不懂学术口语 |
+| 改动核心声明 / 研究问题 / 主要结论 / 因果关系 / 方法边界 | `paper-logical-consistency` | 改一处忘了改其他章节，论证穿帮 |
 | **任何对论文文段做润色 / 改写 / 通顺化** | **`chinese-de-aigc`** | **改完后科研叙事被改成 AI 腔，AIGC 检测率飙升、读起来像没做过研究的人写的** |
 | 写完准备发给导师 / 提交 | `paper-verify-before-handoff` | AI 写得太流畅让人放松警惕 |
 
