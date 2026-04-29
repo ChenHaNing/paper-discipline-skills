@@ -99,7 +99,7 @@ cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 **AI 的行为变化**：
 
 - 没装 Skill 时：直接 Edit 写回原文件，遇到 XML 损坏或误覆盖时无法回滚。
-- 装了 Skill 后：先 `cp "paper.docx" "paper.bak.20260429-103015.docx"` 创建带时间戳的备份，改完提醒用户先打开 Word 验证完整性。
+- 装了 Skill 后：先 `cp "paper.docx" "paper.bak.$(date +%Y%m%d-%H%M%S).docx"` 创建带时间戳的备份，改完提醒用户先打开 Word 验证完整性。
 
 ### 示例 3：交付前自查
 

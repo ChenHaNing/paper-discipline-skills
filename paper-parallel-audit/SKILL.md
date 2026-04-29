@@ -54,7 +54,7 @@ shards = [0:50, 50:100, 100:156]
     {"item_id": 1, "status": "pass", "issue": null},
     {"item_id": 2, "status": "fail", "issue": "作者名拼写错误", "suggestion": "..."}
   ],
-  "completed_at": "2026-04-29T15:30:00"
+  "completed_at": "<ISO 8601 timestamp>"
 }
 ```
 
