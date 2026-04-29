@@ -79,7 +79,7 @@ AI 最擅长的事就是"同义替换"——这正是论文里最致命的事。
 > **缩写 / 模型名**：NLP, BERT, GPT-4, Transformer
 > **复合术语**：in-context learning, cross-attention
 > **专有名词**：Vaswani et al., Pareto frontier
-> **CLAUDE.md 里声明的**：业审融合、内部审计数字化、…
+> **CLAUDE.md 里声明的**：[你 CLAUDE.md 里的自定义核心概念]、[术语]、…
 >
 > 有遗漏 / 不该保护的，请补充或删除。
 > 没问题的话回复"OK"，我就按这个清单开始改。

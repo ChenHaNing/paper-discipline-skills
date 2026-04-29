@@ -70,7 +70,7 @@ cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 不需要主动调用。AI 会按 Skill 的 description 自动判断何时触发。例如：
 
 - 你说「帮我把第三章润色一下」 → `paper-confirm-before-doing` 触发，AI 先和你确认方案，再动手
-- 你说「改一下 论文.docx」 → `paper-backup-before-word` 触发，AI 先 `cp` 备份再改
+- 你说「改一下 paper.docx」 → `paper-backup-before-word` 触发，AI 先 `cp` 备份再改
 - 你说「改完了发我」 → `paper-verify-before-handoff` 触发，AI 跑 10 项硬清单后才宣告完成
 
 如果某次没按预期触发，可以显式说「按 paper-confirm-before-doing 走一遍」或者用 `/<skill-name>` 强制调用。
@@ -92,14 +92,14 @@ cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 
 ### 示例 2：编辑 Word 文件
 
-**用户输入**：「改一下 论文.docx 的第二段。」
+**用户输入**：「改一下 paper.docx 的第二段。」
 
 **触发的 Skill**：`paper-backup-before-word`
 
 **AI 的行为变化**：
 
 - 没装 Skill 时：直接 Edit 写回原文件，遇到 XML 损坏或误覆盖时无法回滚。
-- 装了 Skill 后：先 `cp "论文.docx" "论文.bak.20260429-103015.docx"` 创建带时间戳的备份，改完提醒用户先打开 Word 验证完整性。
+- 装了 Skill 后：先 `cp "paper.docx" "论文.bak.20260429-103015.docx"` 创建带时间戳的备份，改完提醒用户先打开 Word 验证完整性。
 
 ### 示例 3：交付前自查
 
