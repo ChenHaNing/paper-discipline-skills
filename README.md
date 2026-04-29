@@ -71,7 +71,7 @@ cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 
 - 你说「帮我把第三章润色一下」 → `paper-confirm-before-doing` 触发，AI 先和你确认方案，再动手
 - 你说「改一下 论文.docx」 → `paper-backup-before-word` 触发，AI 先 `cp` 备份再改
-- 你说「改完了发我」 → `paper-verify-before-handoff` 触发，AI 跑 9 项硬清单后才宣告完成
+- 你说「改完了发我」 → `paper-verify-before-handoff` 触发，AI 跑 10 项硬清单后才宣告完成
 
 如果某次没按预期触发，可以显式说「按 paper-confirm-before-doing 走一遍」或者用 `/<skill-name>` 强制调用。
 
@@ -110,7 +110,7 @@ cp -r paper-discipline-skills/paper-* ~/.claude/skills/
 **AI 的行为变化**：
 
 - 没装 Skill 时：回复「改完了，文件已保存」——后续可能被导师发现引用 [12] 不在参考文献里。
-- 装了 Skill 后：跑 9 项硬清单（术语 / 引用 / 数据 / 图表 / 交叉引用 / 字数 / Todo 残留 / AIGC / 改动概要），列出每项的具体检查结果才宣告完成。
+- 装了 Skill 后：跑 10 项硬清单（术语 / 引用 / 数据 / 图表 / 交叉引用 / 字数 / Todo 残留 / AIGC / 论证一致性 / 改动概要），列出每项的具体检查结果才宣告完成。
 
 ## 与原书的关系
 
